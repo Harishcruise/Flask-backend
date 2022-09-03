@@ -36,7 +36,7 @@ def route_endpoint(endpoints):
     def GetData():
         resp = {}
         try:
-            users = user_collection.find({})
+            users = user_collection.find({})  
             print(users)
             users = list(users)
             status = {
